@@ -22,7 +22,7 @@ Image fusion seeks to seamlessly integrate foreground objects with background sc
 ## 🔧 Dependencies and Installation
 
 ```shell
-git clone xxx
+git clone https://github.com/LL3RD/DreamFuse-Code.git
 cd DreamFuse
 conda create -n DreamFuse python=3.10
 conda activate DreamFuse
