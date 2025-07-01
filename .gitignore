@@ -1,0 +1,4 @@
+.gradio
+span.log
+__pycache__
+*.pyc

@@ -1,0 +1,17 @@
+datasets:
+  - dataset_type: DreamFuseDataset
+    item_num_scale_factor: 1.0
+    name: 'v1'
+    allow_multi_buckets: True
+    lmdb_data: True
+    data_root: "DreamFuse_Data/DreamFuse80K"
+    meta_root: "DreamFuse_Data/DreamFuse80K.json"
+    valid_root: "./examples"
+    valid_json: ["./examples/data_dreamfuse.json"]
+
+
+size_list: [ 
+             [ 256, 768 ], [ 320, 768 ], [ 320, 704 ], [ 384, 640 ], [ 448, 576 ], [ 512, 512 ], [ 576, 448 ], [ 640, 384 ], [ 704, 320 ], [ 768, 320 ], [ 768, 256 ],
+            #  [ 384, 1152 ], [ 480, 1152 ], [ 480, 1056 ], [ 576, 960 ], [ 672, 864 ], [ 768, 768 ], [ 864, 672 ], [ 960, 576 ], [ 1056, 480 ], [ 1152, 480 ], [ 1152, 384 ],
+            #  [ 512, 1536 ], [ 640, 1536 ], [ 640, 1408 ], [ 768, 1280 ], [ 896, 1152 ], [ 1024, 1024 ], [ 1152, 896 ], [ 1280, 768 ], [ 1408, 640 ], [ 1536, 640 ], [ 1536, 512 ]
+             ]

@@ -1,0 +1,50 @@
+{
+  "002": {
+    "sorted_keys": [
+      "000",
+      "001",
+      "002"
+    ],
+    "img_info": {
+      "000": "valid/002_0.png",
+      "001": "valid/002_1.png",
+      "002": "valid/002_2.png"
+    },
+    "caption_info": {
+      "000": "A plush teddy bear with a soft, fluffy texture and a light brown color, sitting upright against a white background.",
+      "001": "A cozy room with a vintage fireplace adorned with Christmas tree decorations, a hand placing a vinyl on a record player, and several wrapped gifts on the floor.",
+      "002": "A cozy room with a vintage fireplace adorned with Christmas tree decorations, a hand placing a vinyl on a record player, several wrapped gifts on the floor, and a plush teddy bear sitting beside the gifts."
+    },
+    "img_mask_info": {
+      "000": "valid/002_0_mask.png",
+      "000_mask_scale": "valid/002_0_mask_scale.png",
+      "000_paste": "valid/002_2_pasted.png"
+    },
+    "height": 5760,
+    "width": 3840
+  }, 
+  "010": {
+    "sorted_keys": [
+      "000",
+      "001",
+      "002"
+    ],
+    "img_info": {
+      "000": "valid/010_0.png",
+      "001": "valid/010_1.png",
+      "002": "valid/010_2.png"
+    },
+    "caption_info": {
+      "000": "A vintage red car with a classic design, featuring a rounded body and chrome details, set against a plain white background.",
+      "001": "A vibrant street scene with an orange and green trolley moving down a road lined with trees draped in Spanish moss, flanked by parked cars against a backdrop of clear blue sky.",
+      "002": "A vibrant street scene where the vintage red car is seamlessly integrated into the road, alongside a moving orange and green trolley, surrounded by trees and parked cars under a blue sky."
+    },
+    "img_mask_info": {
+      "000": "valid/010_0_mask.png",
+      "000_mask_scale": "valid/010_0_mask_scale.png",
+      "000_paste": "valid/010_2_pasted.png"
+    },
+    "height": 2160,
+    "width": 1440
+  }
+}
