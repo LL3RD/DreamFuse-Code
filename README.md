@@ -76,7 +76,7 @@ To train DreamFuse from T2I model (flux-dev):
 ```shell
 bash dreamfuse_train.sh
 ```
-Adjust hyperparameters directly in `dreamfuse_train.py` and modify the file path in `configs/dreamfuse.yaml`
+Adjust hyperparameters directly in `dreamfuse_train.sh` and modify the file path in `configs/dreamfuse.yaml`
 
 ## 🎨 Examples
 Please visit our [Project Gallery](https://ll3rd.github.io/DreamFuse/).
