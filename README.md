@@ -31,6 +31,19 @@ pip install -r requirements.txt
 ```
 
 ## 📖 Dataset
+We propose an iterative Human-in-the-Loop data generation pipeline and construct a comprehensive fusion dataset containing 80k diverse fusion scenarios. Over half of the dataset features outdoor backgrounds, and approximately 23k images include hand-held scenarios.
+
+<p align="center">
+  <img src="examples/assets/assert_1.jpg" alt="assert" width="800">
+</p>
+<p align="center"><em>Visualization about different fusion scenarios in DreamFuse dataset.</em></p>
+  
+<p align="center">
+  <img src="examples/assets/assert_2.jpg" alt="assert" width="800">
+</p>
+<p align="center"><em>Visualization about different foreground in DreamFuse dataset.</em></p>
+
+
 Download the dataset from [huggingface](https://huggingface.co/datasets/LL3RD/DreamFuse):
 ```shell
 huggingface-cli download --repo-type dataset --resume-download LL3RD/DreamFuse --local-dir DreamFuse_80K --local-dir-use-symlinks False
@@ -40,6 +53,8 @@ Extract the images with:
 cat DreamFuse80K.tar.part* > DreamFuse80K.tar
 tar -xvf DreamFuse80K.tar
 ```
+
+
 
 
 ## 🌟 Gradio Demo
