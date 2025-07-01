@@ -40,28 +40,3 @@ class ImageLmdbReader(object):
             return image
         except:
             return image
-
-
-if __name__ == "__main__":
-    lmdb_path = "/mnt/bn/hjj-humanseg-lq/SubjectDriven/Datasets/DreamFuse_Data/DreamFuse80K"
-    reader = ImageLmdbReader(lmdb_path)
-    json_data = "/mnt/bn/hjj-humanseg-lq/SubjectDriven/Datasets/DreamFuse_Data/DreamFuse80K.json"
-    import json
-    from tqdm import tqdm
-    from concurrent.futures import ThreadPoolExecutor
-
-    def process_image(reader, key, img_info_key, data, is_mask=False):
-        try:
-            image = reader(data[key]["img_mask_info" if is_mask else "img_info"][img_info_key])
-        except Exception as e:
-            print(f"Error reading {'mask ' if is_mask else ''}image {data[key]['img_mask_info' if is_mask else 'img_info'][img_info_key]}: {e}")
-
-    with open(json_data, "r") as f:
-        data = json.load(f)
-
-    with ThreadPoolExecutor(max_workers=32) as executor:
-        for key, value in tqdm(data.items(), desc="Processing images"):
-            for img_info_key in value["img_info"]:
-                executor.submit(process_image, reader, key, img_info_key, data, is_mask=False)
-            for img_mask_info_key in value["img_mask_info"]:
-                executor.submit(process_image, reader, key, img_mask_info_key, data, is_mask=True)
