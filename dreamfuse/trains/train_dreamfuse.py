@@ -258,7 +258,7 @@ def log_validation(
                 ]
 
                 # 4.0 Prepare Condition latent variables
-                condition_image_latents = encode_images_cond(vae_model, [images_cond[:-1]], accelerator.device) # shape: [bs*n_cond, c, h // 8, w // 8]
+                condition_image_latents = encode_images_cond(vae_model, [images_cond[:2]], accelerator.device) # shape: [bs*n_cond, c, h // 8, w // 8]
                 # 4.1 Prepare Condition latent & ids
                 offset_cond = config.image_ids_offset[1:]
                 cond_latent_image_ids = []
