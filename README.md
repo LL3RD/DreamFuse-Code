@@ -54,7 +54,7 @@ cat DreamFuse80K.tar.part* > DreamFuse80K.tar
 tar -xvf DreamFuse80K.tar
 ```
 
-
+If you want to visualize the data, please refer to the function in `data_reader.py` to extract data.
 
 
 ## 🌟 Gradio Demo
