@@ -1,4 +1,4 @@
-# DreamFuse
+# DreamFuse (ICCV 2025)
 Official implementation of **[DreamFuse: Adaptive Image Fusion with Diffusion Transformer](https://ll3rd.github.io/DreamFuse/)**
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2504.08291) [![demo](https://img.shields.io/badge/🤗-Demo-orange)](https://huggingface.co/spaces/LL3RD/DreamFuse) [![dataset](https://img.shields.io/badge/🤗-Dataset-yellow)](https://huggingface.co/datasets/LL3RD/DreamFuse) [![model](https://img.shields.io/badge/🤗-Model-yellow)](https://huggingface.co/LL3RD/DreamFuse) <br>
